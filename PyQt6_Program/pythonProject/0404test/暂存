@@ -1,0 +1,12 @@
+# 以下为新增的东西--使用方法
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+
+    window = QWidget()
+    Ui_Form().setupUi(window)
+    # 传入一个QWidget窗口
+    window.show()
+    # 显示窗口
+
+    sys.exit(app.exec())
