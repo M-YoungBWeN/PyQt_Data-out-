@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>个人认证.png</file>
+    <file>软件开发.png</file>
+    <file>数据库管理.png</file>
+    <file>数据库管理 (1).png</file>
+    <file>数据库警告.png</file>
+    <file>帮助黑.png</file>
+    <file>个人信息黑.png</file>
+    <file>数据库查询黑.png</file>
+    <file>首页.png</file>
+    <file>跳转.png</file>
+    <file>服务.png</file>
+    <file>个人信息.png</file>
+    <file>登出.png</file>
+    <file>帮助.png</file>
+    <file>服务白.png</file>
+    <file>首页白.png</file>
+    <file>数据库查询白.png</file>
+    <file>主页@2x.png</file>
+    <file>笔记.png</file>
+    <file>服务热线.png</file>
+    <file>数据库查询1.png</file>
+    <file>退出.png</file>
+    <file>最小化.png</file>
+    <file>数据库查询.png</file>
+    <file>空间站.jpg</file>
+    <file>太空电梯.jpg</file>
+    <file>登录.png</file>
+    <file>注册邀请.png</file>
+    <file>关闭.png</file>
+    <file>退出.png</file>
+    <file>文件夹.png</file>
+  </qresource>
+</RCC>

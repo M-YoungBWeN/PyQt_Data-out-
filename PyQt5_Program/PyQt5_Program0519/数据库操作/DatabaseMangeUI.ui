@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DatabaseMangeUI</class>
+ <widget class="QWidget" name="DatabaseMangeUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>数据库管理</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons/res.qrc">
+    <normaloff>:/icons/数据库管理.png</normaloff>:/icons/数据库管理.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame_8">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item alignment="Qt::AlignLeft">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="styleSheet">
+         <string notr="true">
+border:none;
+font: 20pt &quot;幼圆&quot;;</string>
+        </property>
+        <property name="text">
+         <string>数据库管理</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icons/res.qrc">
+          <normaloff>:/icons/数据库管理.png</normaloff>:/icons/数据库管理.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>5</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius:9px;
+	background-color: rgb(0, 0, 0);
+	
+	font: 11pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+background-color:
+qlineargradient(spread:pad,x1:0,x2:0, y1:0, y2:1,
+stop: 0 rgba(100,100,100,255),
+stop: 0.495 rgba(0,0,0,255),
+stop: 0.505 rgba(0,0,0,255),
+stop: 1 rgba(100,100,100,255));
+color: rgb(255, 255, 255);
+
+padding-left:2px;
+padding-top:1px;
+}
+
+/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+   /*  background: red;
+    border: 2px outset red;*/
+    color: red;
+    background-color: rgb(64, 64, 64);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+ }
+
+ QTableView {
+    color: white;                                       /*表格内文字颜色*/
+    gridline-color: black;                              /*表格内框颜色*/
+    background-color: rgb(108, 108, 108);               /*表格内背景色*/
+    alternate-background-color: rgb(64, 64, 64);
+    selection-color: white;                             /*选中区域的文字颜色*/
+    selection-background-color: rgb(77, 77, 77);        /*选中区域的背景色*/
+    border: 2px groove gray;
+    border-radius: 0px;
+    padding: 2px 4px;
+}
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(108, 108, 108);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color: rgb(64, 64, 64);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+} 
+
+
+/*表右侧的滑条*/
+QScrollBar:vertical{
+background:#484848;
+padding:0px;
+border-radius:6px;
+max-width:12px;
+}
+
+/*滑块*/
+QScrollBar::handle:vertical{
+background:#CCCCCC;
+}
+/*
+滑块悬浮，按下*/
+QScrollBar::handle:hover:vertical,QScrollBar::handle:pressed:vertical{
+background:#A7A7A7;
+}
+/*
+滑块已经划过的区域*/
+QScrollBar::sub-page:vertical{
+background:444444;
+}
+
+/*
+滑块还没有划过的区域*/
+QScrollBar::add-page:vertical{
+background:5B5B5B;
+}
+
+/*页面下移的按钮*/
+QScrollBar::add-line:vertical{
+background:none;
+}
+/*页面上移的按钮*/
+QScrollBar::sub-line:vertical{
+background:none;
+}
+
+/*QTabWidget*/
+QTabWidget::pane{
+border:none;
+}
+
+QTabWidget::tab-bar {
+     left: 0px;
+}
+
+QTabBar::tab {
+     
+	background-color: rgb(255, 255, 255);
+     /*border: 2px solid #C4C4C3;*/
+     border-bottom-color: #C2C7CB;
+     min-width: 60px;
+     padding: 2px;
+ }
+
+QTabBar::tab:selected{
+    
+	border-color: rgb(255, 255, 255);
+}
+
+QTabBar::tab:!selected{
+	
+	background-color: rgb(230, 230, 230);
+    margin-top:5px;
+}
+/*四个下属界面*/
+#tab,#tab_2,#tab_3,#tab_4{
+    
+	background-color: rgb(255, 255, 255);
+    border-bottom-left-radius:20px;
+ border-bottom-right-radius:20px;
+border-top-right-radius:20px;
+}
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="weaponLayout">
+         <attribute name="title">
+          <string>武器</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="weaponTab">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="vehicleLayout">
+         <attribute name="title">
+          <string>载具</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QTableWidget" name="vehicleTab"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignRight">
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+	border-radius:9px;
+	background-color: rgb(0, 0, 0);
+	
+	
+	font: 11pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+background-color:
+qlineargradient(spread:pad,x1:0,x2:0, y1:0, y2:1,
+stop: 0 rgba(100,100,100,255),
+stop: 0.495 rgba(0,0,0,255),
+stop: 0.505 rgba(0,0,0,255),
+stop: 1 rgba(100,100,100,255));
+color: rgb(255, 255, 255);
+
+padding-left:2px;
+padding-top:1px;
+}</string>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../实例1数据库连接登录窗口/icons/res.qrc"/>
+  <include location="icons/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
